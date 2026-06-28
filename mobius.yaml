@@ -1,0 +1,34 @@
+mobius:
+  repository: mobius-identity
+  product: Mobius Platform
+  capability: Identity and Trust
+  department: Trust
+  owner: Mobius Technologies
+  mission: Attach verified identity context to governed actions.
+  maturity: implemented
+  consumes:
+    - identity-requests
+  produces:
+    - identity-context
+    - permission-results
+  schemas:
+    - IdentityContext
+    - PermissionCheck
+  events:
+    - IdentityVerified
+    - PermissionChecked
+  dependencies:
+    - mobius-schema
+  dependents:
+    - mobius-api
+    - mobius-mcms
+    - mobius-command-center
+  pulse_metrics:
+    - authorization-success-rate
+    - audit-completeness
+  memory_events:
+    - identity-verified
+  architecture_version: Enterprise Alpha v0.1
+  genesis_version: Genesis v1.0
+  canon_version: Canon v1.0
+  sync_status: synchronized
