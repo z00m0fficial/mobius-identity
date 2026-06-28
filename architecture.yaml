@@ -1,0 +1,16 @@
+repository: mobius-identity
+version: 0.1.0
+status: alpha
+layer: governance-trust
+department: Trust
+service: Identity
+mission: Provide identity context, roles, permissions, and trust boundaries.
+capabilities:
+  - founder-identity
+  - service-identity
+  - role-model
+  - permission-checks
+quality_gates:
+  governed_actions_attributed: true
+  role_required: true
+  permissions_required: true
